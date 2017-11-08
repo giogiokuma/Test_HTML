@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+.image {
+    position: relative;
+    display:inline-block;
+    width:100%;
+}
+
+.image::after {
+    padding-top:66.66%;
+    display:block;
+    content: '';
+}
+.content {
+    position:absolute;
+    background-image:url('./images/cat01.png');
+    border:none;
+
+    width: 500px;
+    height:500px;
+}
+
+@media only screen and (min-width:320px) {
+.content {
+    border:1px solid #999;
+    max-width: 100%;
+    background-size:cover;
+    background-position:center center;
+  }
+}
+@media only screen and (min-width:768px) {
+.content {
+    border:2px solid #999;
+    background:none;
+
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="image">
+    <div class="content">
+        
+    </div>
+</div>
+
+<script>
+    
+</script>
+</body>
+</html>
